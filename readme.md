@@ -1,0 +1,204 @@
+opusvix: Crie prompts para transformar dados de vendas em insights valiosos, organizando informações de forma prática e eficiente. 
+
+GitHub Copilot: Aqui estão alguns prompts que você pode usar para transformar dados de vendas em insights valiosos:
+
+1. **Análise de Vendas por Período:**
+   ```sql
+   SELECT 
+       DATE_FORMAT(data_venda, '%Y-%m') AS mes_ano,
+       SUM(valor_venda) AS total_vendas
+   FROM 
+       vendas
+   GROUP BY 
+       mes_ano
+   ORDER BY 
+       mes_ano;
+   ```
+
+2. **Produtos Mais Vendidos:**
+   ```sql
+   SELECT 
+       produto_id,
+       SUM(quantidade) AS total_vendido
+   FROM 
+       vendas
+   GROUP BY 
+       produto_id
+   ORDER BY 
+       total_vendido DESC
+   LIMIT 10;
+   ```
+
+3. **Vendas por Região:**
+   ```sql
+   SELECT 
+       regiao,
+       SUM(valor_venda) AS total_vendas
+   FROM 
+       vendas
+   GROUP BY 
+       regiao
+   ORDER BY 
+       total_vendas DESC;
+   ```
+
+4. **Desempenho de Vendedores:**
+   ```sql
+   SELECT 
+       vendedor_id,
+       SUM(valor_venda) AS total_vendas
+   FROM 
+       vendas
+   GROUP BY 
+       vendedor_id
+   ORDER BY 
+       total_vendas DESC;
+   ```
+
+5. **Comparação de Vendas Ano a Ano:**
+   ```sql
+   SELECT 
+       YEAR(data_venda) AS ano,
+       SUM(valor_venda) AS total_vendas
+   FROM 
+       vendas
+   GROUP BY 
+       ano
+   ORDER BY 
+       ano;
+   ```
+
+6. **Margem de Lucro por Produto:**
+   ```sql
+   SELECT 
+       produto_id,
+       SUM(valor_venda - custo_produto) AS margem_lucro
+   FROM 
+       vendas
+   GROUP BY 
+       produto_id
+   ORDER BY 
+       margem_lucro DESC;
+   ```
+
+7. **Taxa de Retorno de Clientes:**
+   ```sql
+   SELECT 
+       cliente_id,
+       COUNT(*) AS numero_compras,
+       SUM(valor_venda) AS total_gasto
+   FROM 
+       vendas
+   GROUP BY 
+       cliente_id
+   HAVING 
+       numero_compras > 1
+   ORDER BY 
+       total_gasto DESC;
+   ```
+
+Esses prompts SQL ajudarão a organizar e analisar os dados de vendas de forma prática e eficiente, permitindo a extração de insights valiosos para a tomada de decisões.
+
+opusvix: 6
+
+GitHub Copilot: Aqui está o prompt SQL para calcular a margem de lucro por produto:
+
+```sql
+SELECT 
+    produto_id,
+    SUM(valor_venda - custo_produto) AS margem_lucro
+FROM 
+    vendas
+GROUP BY 
+    produto_id
+ORDER BY 
+    margem_lucro DESC;
+```
+
+Este comando SQL agrupa as vendas por `produto_id`, calcula a margem de lucro subtraindo o custo do produto do valor da venda, e ordena os resultados pela margem de lucro em ordem decrescente.
+
+opusvix: Crie prompts no formato de chat para transformar dados de vendas em insights valiosos, organizando informações de forma prática e eficiente.
+
+GitHub Copilot: Claro! Aqui estão alguns prompts no formato de chat que você pode usar para transformar dados de vendas em insights valiosos:
+
+1. **Análise de Vendas por Período:**
+   - "Quais foram as vendas totais por mês e ano?"
+   - "Mostre o total de vendas agrupado por mês e ano."
+
+2. **Produtos Mais Vendidos:**
+   - "Quais são os 10 produtos mais vendidos?"
+   - "Liste os produtos com as maiores quantidades vendidas."
+
+3. **Vendas por Região:**
+   - "Qual é o total de vendas por região?"
+   - "Agrupe as vendas por região e mostre o total."
+
+4. **Desempenho de Vendedores:**
+   - "Quais vendedores tiveram o maior total de vendas?"
+   - "Liste os vendedores ordenados pelo total de vendas."
+
+5. **Comparação de Vendas Ano a Ano:**
+   - "Como as vendas totais se comparam ano a ano?"
+   - "Mostre o total de vendas agrupado por ano."
+
+6. **Margem de Lucro por Produto:**
+   - "Qual é a margem de lucro por produto?"
+   - "Liste os produtos com a maior margem de lucro."
+
+7. **Taxa de Retorno de Clientes:**
+   - "Quais clientes fizeram mais de uma compra e quanto gastaram no total?"
+   - "Mostre os clientes que retornaram e o total gasto por eles."
+
+Esses prompts podem ser usados em um sistema de chat para solicitar insights específicos sobre os dados de vendas, facilitando a organização e análise das informações de forma prática e eficiente.
+
+opusvix: Com base no que foi apresentado, crie um modelo de readme.md, estruturado no formato de repositório do GitHub, apresentando esses prompts e seus resultados em formato de tabela.
+
+GitHub Copilot: Aqui está um modelo de 
+
+readme.md
+
+ estruturado no formato de repositório do GitHub, apresentando os prompts e seus resultados em formato de tabela:
+
+```markdown
+# Análise de Dados de Vendas
+
+Este repositório contém prompts para transformar dados de vendas em insights valiosos, organizando informações de forma prática e eficiente.
+
+## Prompts e Resultados
+
+| **Prompt** | **Descrição** | **Exemplo de Resultado** |
+|------------|---------------|--------------------------|
+| **Análise de Vendas por Período** | Quais foram as vendas totais por mês e ano? | `mes_ano | total_vendas`<br>`2023-01 | 10000`<br>`2023-02 | 15000` |
+| **Produtos Mais Vendidos** | Quais são os 10 produtos mais vendidos? | `produto_id | total_vendido`<br>`1 | 500`<br>`2 | 450` |
+| **Vendas por Região** | Qual é o total de vendas por região? | `regiao | total_vendas`<br>`Norte | 20000`<br>`Sul | 18000` |
+| **Desempenho de Vendedores** | Quais vendedores tiveram o maior total de vendas? | `vendedor_id | total_vendas`<br>`1 | 30000`<br>`2 | 25000` |
+| **Comparação de Vendas Ano a Ano** | Como as vendas totais se comparam ano a ano? | `ano | total_vendas`<br>`2022 | 120000`<br>`2023 | 140000` |
+| **Margem de Lucro por Produto** | Qual é a margem de lucro por produto? | `produto_id | margem_lucro`<br>`1 | 5000`<br>`2 | 4500` |
+| **Taxa de Retorno de Clientes** | Quais clientes fizeram mais de uma compra e quanto gastaram no total? | `cliente_id | numero_compras | total_gasto`<br>`1 | 3 | 900`<br>`2 | 2 | 700` |
+
+## Como Usar
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   ```
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd seu-repositorio
+   ```
+3. Execute os prompts SQL no seu banco de dados para obter os insights desejados.
+
+## Contribuição
+
+Sinta-se à vontade para contribuir com este projeto. Envie um pull request com suas melhorias e sugestões.
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+```
+
+Este modelo de 
+
+readme.md
+
+ apresenta os prompts e seus resultados em formato de tabela, facilitando a visualização e compreensão dos insights gerados a partir dos dados de vendas.
