@@ -15,11 +15,9 @@ Explore maneiras de utilizar prompts para transformar dados de vendas em insight
 
 ## :atom: Prompts:
 
-Inicialmente, solicitei
-
-
-
-opusvix: Crie prompts para transformar dados de vendas em insights valiosos, organizando informações de forma prática e eficiente. 
+Inicialmente, anexei as pastas de trabalho com as planilhas de vendas de três representantes de vendas;
+A seguir, solicitei que o Copilot criasse prompts para transformar dados de vendas em insights valiosos, organizando informações de forma prática e eficiente. 
+Como não especifiquei o formato de saída, retornou-me alguns prompts em SQL, como pode ser visto a seguir:
 
 GitHub Copilot: Aqui estão alguns prompts que você pode usar para transformar dados de vendas em insights valiosos:
 
@@ -120,25 +118,11 @@ GitHub Copilot: Aqui estão alguns prompts que você pode usar para transformar 
 
 Esses prompts SQL ajudarão a organizar e analisar os dados de vendas de forma prática e eficiente, permitindo a extração de insights valiosos para a tomada de decisões.
 
-opusvix: 6
+Foram resultados excelentes! Mas refiz minha solicitação da seguinte forma: 
 
-GitHub Copilot: Aqui está o prompt SQL para calcular a margem de lucro por produto:
+"Crie prompts no formato de chat para transformar dados de vendas em insights valiosos, organizando informações de forma prática e eficiente."
 
-```sql
-SELECT 
-    produto_id,
-    SUM(valor_venda - custo_produto) AS margem_lucro
-FROM 
-    vendas
-GROUP BY 
-    produto_id
-ORDER BY 
-    margem_lucro DESC;
-```
-
-Este comando SQL agrupa as vendas por `produto_id`, calcula a margem de lucro subtraindo o custo do produto do valor da venda, e ordena os resultados pela margem de lucro em ordem decrescente.
-
-opusvix: Crie prompts no formato de chat para transformar dados de vendas em insights valiosos, organizando informações de forma prática e eficiente.
+E o Copilt retornou o texto a seguir:
 
 GitHub Copilot: Claro! Aqui estão alguns prompts no formato de chat que você pode usar para transformar dados de vendas em insights valiosos:
 
@@ -172,13 +156,13 @@ GitHub Copilot: Claro! Aqui estão alguns prompts no formato de chat que você p
 
 Esses prompts podem ser usados em um sistema de chat para solicitar insights específicos sobre os dados de vendas, facilitando a organização e análise das informações de forma prática e eficiente.
 
-opusvix: Com base no que foi apresentado, crie um modelo de readme.md, estruturado no formato de repositório do GitHub, apresentando esses prompts e seus resultados em formato de tabela.
+A seguir, solicitei que me desse um modelo de arquivo readme.me para aplicar no GitHub, veja a seguir:
 
-GitHub Copilot: Aqui está um modelo de 
+"Com base no que foi apresentado, crie um modelo de readme.md, estruturado no formato de repositório do GitHub, apresentando esses prompts e seus resultados em formato de tabela.
 
-readme.md
+A resposta foi:
 
- estruturado no formato de repositório do GitHub, apresentando os prompts e seus resultados em formato de tabela:
+GitHub Copilot: Aqui está um modelo de readme.md estruturado no formato de repositório do GitHub, apresentando os prompts e seus resultados em formato de tabela:
 
 ```markdown
 # Análise de Dados de Vendas
