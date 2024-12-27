@@ -195,10 +195,38 @@ Este repositório contém prompts para transformar dados de vendas em insights v
 
 ## Contribuição
 
-Sinta-se à vontade para contribuir com este projeto. Envie um pull request com suas melhorias e sugestões.
+Sinta-se à vontade para contribuir com este projeto. Envie um `pull request` com suas melhorias e sugestões.
 
 ## Licença
 
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 Este modelo de readme.md apresenta os prompts e seus resultados em formato de tabela, facilitando a visualização e compreensão dos insights gerados a partir dos dados de vendas.
+
+## 👨‍💻 Autor
+
+<p>
+    <img 
+      align=left 
+      margin=10 
+      width=80 
+      src="https://avatars.githubusercontent.com/u/58704060?s=400&u=c58b05997dcd842e95dd0f5c45ab04c2054df583&v=4"
+    />
+    <p>&nbsp&nbsp&nbspMaurício Barros<br>
+    &nbsp&nbsp&nbsp
+    <a href="https://github.com/opusvix">
+    GitHub</a>&nbsp;|&nbsp;
+    <a href="https://www.linkedin.com/in/mauriciodasilvabarros/">LinkedIn</a>
+    &nbsp;|&nbsp;
+    <a href="https://x.com/opusvix">
+    X</a>&nbsp;|&nbsp;
+    <a href="mailto:opusvix@gmail.com">E-mail</a>
+&nbsp;|&nbsp;</p>
+</p>
+<br/><br/>
+<p>
+
+---
+
+:hammer_and_wrench: com :sparkling_heart: por [Maurício Barros](https://github.com/opusvix)
+
