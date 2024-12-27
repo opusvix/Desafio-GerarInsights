@@ -123,7 +123,7 @@ Foram resultados excelentes! Mas refiz minha solicitação da seguinte forma:
 "Crie prompts no formato de chat para transformar dados de vendas em insights valiosos, organizando informações de forma prática e eficiente."
 
 E o Copilt retornou o texto a seguir:
-
+```
 GitHub Copilot: Claro! Aqui estão alguns prompts no formato de chat que você pode usar para transformar dados de vendas em insights valiosos:
 
 1. **Análise de Vendas por Período:**
@@ -155,7 +155,7 @@ GitHub Copilot: Claro! Aqui estão alguns prompts no formato de chat que você p
    - "Mostre os clientes que retornaram e o total gasto por eles."
 
 Esses prompts podem ser usados em um sistema de chat para solicitar insights específicos sobre os dados de vendas, facilitando a organização e análise das informações de forma prática e eficiente.
-
+```
 A seguir, solicitei que me desse um modelo de arquivo readme.me para aplicar no GitHub, veja a seguir:
 
 "Com base no que foi apresentado, crie um modelo de readme.md, estruturado no formato de repositório do GitHub, apresentando esses prompts e seus resultados em formato de tabela.
