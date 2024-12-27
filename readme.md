@@ -6,6 +6,17 @@
 
 Explore maneiras de utilizar prompts para transformar dados de vendas em insights valiosos, organizando informações de forma prática e eficiente.
 
+## :abacus: Tecnologias utilizadas nesse projeto:
+
+- [VSCode](https://code.visualstudio.com/Download)
+- [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat)
+- [Python 3.x](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- No curso o instrutor utilizou o ChatGPT 4.0, então optei pela extensão do VSCode: GitHub Copilot Chat.
+
+## :atom: Prompts:
+
+Inicialmente, solicitei
+
 
 
 opusvix: Crie prompts para transformar dados de vendas em insights valiosos, organizando informações de forma prática e eficiente. 
