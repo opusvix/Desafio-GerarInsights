@@ -180,7 +180,7 @@ Este repositório contém prompts para transformar dados de vendas em insights v
 | **Comparação de Vendas Ano a Ano** | Como as vendas totais se comparam ano a ano? | `ano | total_vendas`<br>`2022 | 120000`<br>`2023 | 140000` |
 | **Margem de Lucro por Produto** | Qual é a margem de lucro por produto? | `produto_id | margem_lucro`<br>`1 | 5000`<br>`2 | 4500` |
 | **Taxa de Retorno de Clientes** | Quais clientes fizeram mais de uma compra e quanto gastaram no total? | `cliente_id | numero_compras | total_gasto`<br>`1 | 3 | 900`<br>`2 | 2 | 700` |
-
+```
 ## Como Usar
 
 1. Clone o repositório:
