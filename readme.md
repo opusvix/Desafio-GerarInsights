@@ -184,13 +184,13 @@ Este repositório contém prompts para transformar dados de vendas em insights v
 ## Como Usar
 
 1. Clone o repositório:
-   ```bash
+   ```sh
    git clone https://github.com/seu-usuario/seu-repositorio.git
-   ```bash
+   ```
 2. Navegue até o diretório do projeto:
-   ```bash
+   ```sh
    cd seu-repositorio
-   ```bash
+   ```
 3. Execute os prompts SQL no seu banco de dados para obter os insights desejados.
 
 ## Contribuição
