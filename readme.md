@@ -1,3 +1,13 @@
+# Bootcamp Microsoft AI for Tech – Criando Prompts Inteligentes da [DIO](https://dio.me)
+
+## Módulo "APlicações Práticas e Ferramentas de IAs".
+
+### Desafio de Projeto "Utilizando Prompts para Gerar Insights de Relatórios de Vendas".
+
+Explore maneiras de utilizar prompts para transformar dados de vendas em insights valiosos, organizando informações de forma prática e eficiente.
+
+
+
 opusvix: Crie prompts para transformar dados de vendas em insights valiosos, organizando informações de forma prática e eficiente. 
 
 GitHub Copilot: Aqui estão alguns prompts que você pode usar para transformar dados de vendas em insights valiosos:
